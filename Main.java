@@ -11,12 +11,14 @@ public class Main {
             File file = new File("file.txt");
             // Apre il file per poterlo leggere con Scanner.
             Scanner scanner = new Scanner(file);
+            String riga;
+            String[] parole;
             // Legge e stampa ogni riga fino alla fine del file.
             while (scanner.hasNextLine()) {
-                String riga = scanner.nextLine();
-                String[] parole = riga.split(" ");
-                for (String parola : parole) {
-                    System.out.println(parola);
+                riga = scanner.nextLine();
+                parole = riga.split(" ");
+                for (int i = 0; i < parole.length; i++) {
+                    System.out.println(parole[i]);
                 }
             }
             // Chiude lo Scanner e libera la risorsa associata al file.
