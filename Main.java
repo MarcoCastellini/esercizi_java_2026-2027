@@ -16,13 +16,15 @@ public class Main {
             PrintWriter writer = new PrintWriter(output);
             String riga;
             String[] parole;
+            String parola;
             // Legge e stampa ogni riga fino alla fine del file.
             while (scanner.hasNextLine()) {
                 riga = scanner.nextLine();
                 parole = riga.split("[ ;.,:?!']");
                 for (int i = 0; i < parole.length; i++) {
-                    if (parole[i] != "") {
-                        writer.println(parole[i]);
+                    parola = parole[i].toLowerCase().trim();
+                    if (!parola.equals(" ") && parola.length()>3) {
+                        writer.println(parola);
                     }
                 }
             }
