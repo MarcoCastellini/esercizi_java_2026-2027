@@ -1,7 +1,5 @@
 package ListaDoppiaLinkata;
 
-import Parola;
-
 public class ListaDoppiaLinkata {
     private Parola head;
     private Parola tail;
