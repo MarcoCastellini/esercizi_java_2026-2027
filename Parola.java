@@ -1,4 +1,4 @@
-public public class Parola implements Comparable<Parola> {
+public class Parola implements Comparable<Parola> {
     private String testo;
     private int contatore;
     
