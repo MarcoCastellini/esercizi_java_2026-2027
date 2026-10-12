@@ -1,4 +1,7 @@
 import java.util.Scanner;
+
+import ListaDoppiaLinkata.Parola;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;

@@ -1,3 +1,5 @@
+import ListaDoppiaLinkata.Parola;
+
 public class Parola implements Comparable<Parola> {
 
     private String testo;
