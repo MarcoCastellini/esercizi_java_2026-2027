@@ -1,6 +1,5 @@
-import Parola;
-
 package ListaDoppiaLinkata;
+
 public class Parola implements Comparable<Parola> {
     private String testo;
     private int contatore;
